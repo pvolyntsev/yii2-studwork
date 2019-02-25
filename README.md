@@ -8,13 +8,19 @@ Composer
 
 ## Preinstall
 
-### Nginx
+```
+git clone https://github.com/pvolyntsev/yii2-studwork.git
+cd yii2-studwork
+composer install
+```
+
+### Configure Nginx
 ```
 sudo ln -sf app/nginx/conf/studwork.dev.conf /etc/nginx/sites-enabled/studwork.dev.conf
 sudo service nginx restart
 ```
 
-### MySQL
+### Setup MySQL database
 
 ```
 mysql -uroot <<< "CREATE DATABASE IF NOT EXISTS studwork DEFAULT CHARACTER SET utf8;"
@@ -29,10 +35,6 @@ mysql -uroot <<< "GRANT ALL PRIVILEGES ON studwork.* TO studwork@127.0.0.1 IDENT
 ## Install
 
 ```
-git clone https://github.com/pvolyntsev/yii2-studwork.git
-cd yii2-studwork
-composer install
-
 php yii migrate --interactive=0
 ```
 
