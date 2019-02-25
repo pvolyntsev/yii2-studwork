@@ -1,0 +1,41 @@
+{
+    "name": "studwork",
+    "description": "studwork sample app",
+    "keywords": ["studwork"],
+    "homepage": "http://projects.copist.ru/studwork/",
+    "type": "project",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/pvolyntsev/studwork/issues?state=open",
+        "source": "https://github.com/pvolyntsev/studwork"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0.0",
+        "ext-openssl": "*",
+        "ext-json": "*",
+        "yiisoft/yii2": "~2.0.14"
+    },
+    "require-dev": {
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "yiisoft/yii2-debug": "~2.0.0",
+        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+
+        "codeception/base": "~2.3.0",
+        "codeception/verify": "~0.4.0",
+        "codeception/specify": "~0.4.6"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
